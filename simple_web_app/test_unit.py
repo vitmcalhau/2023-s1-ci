@@ -68,6 +68,7 @@ def test_8_chars_with_no_upper_case_password_should_raise_exception():
         # when
         validator.password_validate()
 
+
 def test_8_chars_with_not_allowed_especial_chars_password_should_raise_exception():
     # given
     validator = PasswordValidator(content="/Ab1^c2~")
